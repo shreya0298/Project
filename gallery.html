@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Avatar Arts</title>
+    <style>
+/* Nav icon */
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: rgb(189, 78, 78);
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 26px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+/*dropdown*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+ /*Tranisition*/
+ img {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s, height 2s, transform 2s;
+        }
+
+        img:hover {
+            width: 300px;
+            height: 300px;
+            transform: rotate(180deg);
+        }
+        /* list showing*/
+        div.menu {
+  background-color: rgb(223, 231, 223);
+
+        }
+
+/*Pagination*/
+.center {
+  text-align: center;
+}
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+</style>
+
+</head>
+
+<body>
+ 
+      <!--Main menu bar-->
+      <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <a class="navbar-brand" href="#">
+            <img src="logo.png" width="30" height="30" alt="" loading="lazy">
+          </a>
+        
+          <a class="navbar-brand text-warning " href="#">Avatar Arts</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse show" id="navbarCollapse" >
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Wishlist</a>
+                <li class="nav-item">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                    <li class="nav-item">
+                  <a class="nav-link" href="#">Payment</a>
+                </li>
+              </li>
+              
+              <!--DROP DOWN-->
+        
+              <li class="nav-item">
+                <a class="nav-link" href="#">Feedback</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <form class="form-inline mt-2 mt-md-0 ml-2">
+                <input class="form-control mr-sm-2 " type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary " type="submit">Search</button>
+              </form>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/login.html">Login</a>
+              </li>
+          </div>
+        </nav>
+      </header>
+<br><br><br><br><br>
+
+
+
+        <div>
+          <marquee behavior="scroll" direction="left" scrol400amount="12">
+              <img src="images/s1.jpg" width="430" height="500" alt="God Shiva" />
+              <img src="images/s9.jpg" width="430" height="500" alt="God Shiva" />
+              <img src="images/s3.jpg" width="430" height="500" alt="God Shiva" />
+              <img src="images/s4.jpg" width="430" height="500" alt="God Shiva" />
+              <img src="images/s5.jpg" width="430" height="500" alt="God Shiva" />
+              <img src="images/s6.jpg" width="430" height="500" alt="God Shiva" />
+              <img src="images/s7.jpg" width="430" height="500" alt="God Shiva" />
+              <img src="images/s8.jpg" width="430" height="500" alt="God Shiva" />
+              <img src="images/s9.jpg" width="430" height="500" alt="God Shiva" />
+              <img src="images/s10.jpg" width="430" height="500" alt="God Shiva" />
+          </marquee>
+          </div>
+  
+          <div>
+              <marquee behavior="scroll" direction="right" scrollamount="12">
+                  <img src="images/v1.jpg" width="220" height="200" alt="God Vishnu" />
+                  <img src="images/v2.jpg" width="220" height="200" alt="God Vishnu" />
+                  <img src="images/v9.jpg" width="220" height="200" alt="God Vishnu" />
+  
+                  <img src="images/v4.jpg" width="220" height="200" alt="God Vishnu" />
+                  <img src="images/v5.jpg" width="220" height="200" alt="God Vishnu" />
+                  <img src="images/v9.jpg" width="220" height="200" alt="God Vishnu" />
+                  <img src="images/v7.jpg" width="220" height="200" alt="God Vishnu" />
+                  <img src="images/v8.jpg" width="220" height="200" alt="God Vishnu" />
+  
+                  <img src="images/v9.jpg" width="120" height="80" alt="God Vishnu" />
+                  <img src="images/v10.jpg" width="120" height="80" alt="God Vishnu" />
+              </marquee>
+
+
+              
+        <div >
+          <marquee  behavior="scroll" direction="left" scrollamount="12">
+              <img  src="images/h1.jpg" width="430" height="500" alt="God Hanuman" />
+              <img src="images/h2.jpg" width="430" height="500" alt="God Hanuman" />
+              <img src="images/h3.jpg" width="430" height="500" alt="God Hanuman" />
+              <img src="images/h4.jpg" width="430" height="500" alt="God Hanuman" />
+              <img src="images/h5.jpg" width="430" height="500" alt="God Hanuman" />
+              <img src="images/h6.jpg" width="430" height="500" alt="God Hanuman" />
+              <img src="images/h7.jpg" width="430" height="500" alt="God Hanuman" />
+              <img src="images/h8.jpg" width="430" height="500" alt="God Hanuman" />
+              <img src="images/h9.jpg" width="430" height="500" alt="God Hanuman" />
+              <img src="images/h10.jpg" width="430" height="500" alt="God Hanuman" />
+          </marquee>
+          </div>
+  
+              <br><br><br>
+  
+             
+             
+  
+          </div>
+          <div>
+  
+          </div>
+          <div class="pagination">
+              <a href="gallery.html" >&laquo;</a>
+              <a href="gallery.html" class="active">1</a>
+              <a href="gallery.html">2</a>
+              <a href="gallery.html">3</a>
+              <a href="gallery.html">4</a>
+              <a href="gallery.html">5</a>
+              <a href="gallery.html">6</a>
+              <a href="gallery.html">7</a>
+              <a href="gallery.html">8</a>
+              <a href="gallery.html">9</a>
+              <a href="gallery.html">10</a>
+              
+              <a href="#">&raquo;</a>
+            </div>
+</body>
+</html>

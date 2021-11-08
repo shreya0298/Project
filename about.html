@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Avatar Arts</title>
+    
+    <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: rgb(189, 78, 78);
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 26px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+/*dropdown*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+        .head {
+            border: 5px outset rgb(14, 13, 13);
+            background-color: rgb(201, 186, 192);
+            text-align: center;
+        }
+
+        .head1 {
+            border: 5px outset rgb(233, 225, 225);
+            background-color: rgb(83, 81, 82);
+            text-align: center;
+
+        }
+
+        .h1 {
+            text-align: center;
+        }
+
+        /*Tranisition*/
+        img {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s, height 2s, transform 2s;
+        }
+
+        img:hover {
+            width: 300px;
+            height: 300px;
+            transform: rotate(180deg);
+        }
+        /* list showing*/
+        div.menu {
+  background-color: rgb(223, 231, 223);
+
+        }
+/*Pagination*/
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+        /*Footer*/
+
+        /* about with image */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* card*/
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+    </style>
+</head>
+
+<body>
+    <!-- About Us -->
+<div>
+    <div class="about-section" >
+      <h1><u>About Us</u> </h1><br>
+     <h4>Who We Are</h4> <br>
+Welcome to StatueStudio.com. The name says it all. We, StatueStudio.com are first of a kind online studio that has the largest variety of metal/brass statues, which have been uniquely designed by the artists and have been given innovative finishing with colors and gem stones to exceed your expectations for spiritual and decorative purposes. Each statue is being provided with everlasting shine which literally requires - No Care.
+
+StatueStudio sells large variety of statues in the form of Hindu Gods, including but not limited to - The Nataraja (Dancing Shiva), The Ganesha (The Elephant head God), The Shiva (The Destroyer of all evils), The Krishna, (The preacher of Geeta), The Vishnu (The creator of the universe), Maa Durga (The Goddess on Tiger), Maa Saraswati (The Goddess of all arts, knowledge and wisdom), Maa Lakshmi (The Goddess of wealth and money), The Buddha (The Enlightened one), Goddess Tara, The Laughing Buddha (Budai), and many more.
+
+Our range of home decor statues has a large variety to choose from. Animal statues include Elephants, Lions, Leopards, Cats, and Horses. These statues and other brass showpieces are crafted with finesse to give a newer and greater look to your homes, temples, altar, gardens, showrooms and offices. A special never before range of Singing Bowls is available for healing and music therapy purposes.
+<br><br>
+<h4>What We Do</h4><br>
+Being into this business for last 20 years we handpick the finest of the Hindu Gods Statues, Buddha statues, Singing bowls, Animal statues and other brass showpieces from different parts of India. We 'Wow' our customers with the finest sculptures that surpass their satisfaction levels and at the same time offer great value to the artists who design and transform metal pieces in to excellent samples of their art, talent and craftsmanship.
+<br><br>
+<h4>About the raw material</h4><br>
+Brass. Category: Metal. Brass statues are popular than any other metal because of its everlasting shine, no maintenance, great resale value, and affordability.
+<br><br>
+<h4>Our Journey</h4><br>
+It all got started 3-4 decades ago by our elder generation, when they got into this wonderful business of selling these magnificient pieces of art. Though they say it appears to be just yesterday when they started out on this path, why, because its been such a fulfilling ride all throughout, being surrounded by the absolutely beautiful sculptures and statues, getting to know and learn about different cultures and religions through them, meeting and interacting such extraordinary talented artists who make them, and there is nothing more satisfactory than seeing someone choosing statue of his/her choice or rather should we say statue choosing him/her.
+
+To continue doing it with the same passion and zeal we have been thinking how can we expand the reach of this lovely art to everyone worldwide. And we then came across this idea of selling it online through e-commerce, thereby taking this art and knowledge around them to every nook and corner of the world. Thats how and why, StatueStudio.com was born.
+
+StatueStudio.com is owned by our Indian Company by the name of "KRJ Retail Private Limited".
+    </div><br>
+</div>    
+
+<!-- about us with image -->
+<h2 style="text-align:center">Founder</h2>
+
+<div class="card">
+<img src="images/founderPic.jpg" alt="Shreya Kumari" style="width:100%">
+<h1>Shreya Kumari</h1>
+<p class="title">Frontend and Backend Developer</p>
+<p>VBU University</p>
+<div style="margin: 24px 0;">
+
+<a href="#"><i class="fa fa-twitter"></i></a>  
+<a href="#"><i class="fa fa-linkedin"></i></a>  
+<a href="#"><i class="fa fa-facebook"></i></a> 
+<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a> 
+</div>
+<p><button>Contact</button></p>
+</div>
+
+   
+    <!-- navbar with icon -->
+    
+<div class="navbar">
+
+<a class="active" href="#"><i class="fa fa-fw fa-search"></i>About Us </a> 
+
+<a href="#"> Portfolio</a> 
+<a href="#"><i class='fas fa-child' ></i> Success Story</a>
+<a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+</div> 
+
+
+
+<br>
+</body>
+
+</html>
